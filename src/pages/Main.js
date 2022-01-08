@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
-import TableCoins from './components/TableCoins';
+import TableCoins from '../components/TableCoins';
 
 function App() {
 
