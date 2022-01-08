@@ -9,6 +9,9 @@ const CoinRow = ({coin, index}) => {
                 <span>
                     {coin.name}
                 </span>
+                <span className="ms-2 text-muted text-uppercase">
+                    {coin.symbol}
+                </span>
             </td>
             <td>{coin.current_price}</td>
             <td>{coin.price_change_percentage_24h}</td>
