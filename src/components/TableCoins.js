@@ -5,7 +5,7 @@ const TableCoins = ({coins}) => {
     
 
     return (
-        <table>
+        <table className="table table-dark mt-4 table-hover">
             <thead>
                 <tr>
                     <td>Name</td>
@@ -13,7 +13,9 @@ const TableCoins = ({coins}) => {
             </thead>
             <tbody>
                 {coins.map(coin => (
-                    <tr key={coin.id}>{coin.name}</tr>
+                    <tr key={coin.id}>
+                        <td>{coin.name}</td>
+                    </tr>
                 ))}
             </tbody>
         </table>

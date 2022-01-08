@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react';
-import './App.css';
 import axios from 'axios';
 import TableCoins from './components/TableCoins';
 
@@ -17,9 +16,10 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <h1>Coin Market</h1>
-      <TableCoins coins={coins} />
+    <div className="container">
+      <div className="row">
+        <TableCoins coins={coins} />
+      </div>
     </div>
   );
 }
