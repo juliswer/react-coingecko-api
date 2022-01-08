@@ -2,12 +2,21 @@ import React from 'react'
 
 const TableCoins = ({coins}) => {
 
-    console.log(coins)
+    
 
     return (
-        <div>
-            table
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                </tr>
+            </thead>
+            <tbody>
+                {coins.map(coin => (
+                    <tr key={coin.id}>{coin.name}</tr>
+                ))}
+            </tbody>
+        </table>
     )
 }
 
