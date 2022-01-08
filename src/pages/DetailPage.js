@@ -6,9 +6,11 @@ const DetailCoin = () => {
 
     const {id} = useParams();
 
+    const [coin, setCoin] = useState({});
+
     const getSingleData = async () => {
         const res = await axios.get('https://api.coingecko.com/api/v3/coins/' + id);
-        console.log(res)
+        setCoin(res.data)
     }
 
     useEffect(() => {
@@ -17,7 +19,7 @@ const DetailCoin = () => {
 
     return (
         <div>
-            <h1>detail page</h1>
+            <h1>{coin.name}</h1>
         </div>
     )
 }
