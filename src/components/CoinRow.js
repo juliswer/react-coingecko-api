@@ -1,8 +1,12 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom';
 
 const CoinRow = ({coin, index}) => {
+
+    const navigate = useNavigate();
+
     return (
-        <tr>
+        <tr onClick={() => navigate(`/coin/${coin.id}`)}>
             <td>{index}</td>
             <td>
                 <img src={coin.image} alt={coin.name} className="img-fluid me-2" style={{width: '3%'}} />
