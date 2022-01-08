@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
+import Coin from '../components/SingleCoin';
 
 const DetailCoin = () => {
 
@@ -18,8 +19,8 @@ const DetailCoin = () => {
     }, [])
 
     return (
-        <div>
-            <h1>{coin.name}</h1>
+        <div className="container">
+            <Coin coin={coin} />
         </div>
     )
 }
