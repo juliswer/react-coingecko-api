@@ -3,7 +3,7 @@ import CoinRow from './CoinRow';
 
 const TableCoins = ({coins}) => {
 
-    const titles = ['#', 'Coin', 'Price', 'Price Change', '24hs Volume']
+    const titles = ['#', 'Coin', 'Price', 'Price Change', '24h Volume']
 
     return (
         <table className="table table-dark mt-4 table-hover">
